@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/app/:path*", "destination": "https://loucosporminis.fly.dev/app/:path*" },
+    { "source": "/loja/:path*", "destination": "https://loucosporminis.fly.dev/app/:path*" },
+    { "source": "/_expo/:path*", "destination": "https://loucosporminis.fly.dev/_expo/:path*" },
+    { "source": "/assets/:path*", "destination": "https://loucosporminis.fly.dev/assets/:path*" },
+    { "source": "/mp-status.html", "destination": "https://loucosporminis.fly.dev/mp-status.html" }
+  ]
+}
