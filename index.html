@@ -873,12 +873,15 @@
       if (reduced) { el.textContent = target; return; }
       var start = null;
       var dur = 1100;
+      // Rede de segurança: se o requestAnimationFrame travar (ex: aba vai pro
+      // fundo no meio da animação), garante o valor final mesmo assim.
+      var safety = setTimeout(function () { el.textContent = target; }, dur + 400);
       function step(ts) {
         if (!start) start = ts;
         var p = Math.min((ts - start) / dur, 1);
         var eased = 1 - Math.pow(1 - p, 3);
         el.textContent = Math.round(eased * target);
-        if (p < 1) requestAnimationFrame(step);
+        if (p < 1) { requestAnimationFrame(step); } else { clearTimeout(safety); }
       }
       requestAnimationFrame(step);
     });
