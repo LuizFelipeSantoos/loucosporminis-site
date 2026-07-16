@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Suporte — Loucos por Minis</title>
+<meta name="robots" content="index, follow" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<style>
+  :root {
+    --red: #E31837;
+    --bg: #F7F6F2;
+    --card: #FFFFFF;
+    --line: #E4E1D8;
+    --ink: #1A1A1A;
+    --ink-soft: #55524A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17181B;
+      --card: #1E2024;
+      --line: #33363C;
+      --ink: #ECE7DD;
+      --ink-soft: #A8A49B;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17181B;
+    --card: #1E2024;
+    --line: #33363C;
+    --ink: #ECE7DD;
+    --ink-soft: #A8A49B;
+  }
+  :root[data-theme="light"] {
+    --bg: #F7F6F2;
+    --card: #FFFFFF;
+    --line: #E4E1D8;
+    --ink: #1A1A1A;
+    --ink-soft: #55524A;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .top {
+    background: var(--red);
+    padding: 20px 24px;
+  }
+  .top a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+  }
+  .sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 32px 0 10px;
+  }
+  p, li { color: var(--ink); font-size: 15px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a.inline { color: var(--red); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 16px;
+  }
+  .card strong { font-size: 16px; }
+  .card a.btn {
+    display: inline-block;
+    margin-top: 12px;
+    background: var(--red);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius: 8px;
+  }
+  details {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    background: var(--card);
+  }
+  summary {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  details p { margin-bottom: 0; margin-top: 10px; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+  <div class="top"><a href="/">← Loucos por Minis</a></div>
+  <div class="wrap">
+    <h1>Suporte</h1>
+    <p class="sub">Precisa de ajuda com o app ou com um pedido? Estamos aqui.</p>
+
+    <div class="card">
+      <strong>Fale direto comigo</strong>
+      <p style="margin-top:8px;">Respondo pessoalmente todo contato — dúvidas sobre o app, problemas com pagamento, envio ou qualquer outra coisa.</p>
+      <a class="btn" href="mailto:luiz.felipebmx@gmail.com">luiz.felipebmx@gmail.com</a>
+    </div>
+
+    <h2>Perguntas frequentes</h2>
+
+    <details>
+      <summary>Meu pagamento não foi aprovado, o que fazer?</summary>
+      <p>Pagamentos são processados pelo Mercado Pago. Se um cartão for recusado, tente outro cartão ou Pix. Se o problema persistir, escreva pra gente com o e-mail usado na compra que verificamos o que aconteceu.</p>
+    </details>
+
+    <details>
+      <summary>Como acompanho o rastreio do meu pedido?</summary>
+      <p>Assim que a loja despacha o pedido, você recebe um e-mail com o código e o link de rastreio da transportadora.</p>
+    </details>
+
+    <details>
+      <summary>Como abro minha própria loja no app?</summary>
+      <p>Baixe o app, crie sua conta, cadastre seu inventário e ative sua loja nas configurações. É gratuito pra começar.</p>
+    </details>
+
+    <details>
+      <summary>Quero excluir minha conta e meus dados</summary>
+      <p>Escreva pra <a class="inline" href="mailto:luiz.felipebmx@gmail.com">luiz.felipebmx@gmail.com</a> pedindo a exclusão. Veja também nossa <a class="inline" href="/privacidade.html">Política de Privacidade</a>.</p>
+    </details>
+  </div>
+</body>
+</html>
