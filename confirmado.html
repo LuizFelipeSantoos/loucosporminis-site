@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tudo certo! — Loucos por Minis</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<style>
+  :root {
+    --red: #E31837;
+    --bg: #F7F6F2;
+    --card: #FFFFFF;
+    --line: #E4E1D8;
+    --ink: #1A1A1A;
+    --ink-soft: #55524A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17181B;
+      --card: #1E2024;
+      --line: #33363C;
+      --ink: #ECE7DD;
+      --ink-soft: #A8A49B;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17181B;
+    --card: #1E2024;
+    --line: #33363C;
+    --ink: #ECE7DD;
+    --ink-soft: #A8A49B;
+  }
+  :root[data-theme="light"] {
+    --bg: #F7F6F2;
+    --card: #FFFFFF;
+    --line: #E4E1D8;
+    --ink: #1A1A1A;
+    --ink-soft: #55524A;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 40px 32px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  .check {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--red);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 10px;
+  }
+  p {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="check">✓</div>
+    <h1>Tudo certo!</h1>
+    <p>Seu e-mail foi confirmado. Volte pro app Loucos por Minis e faça login pra continuar.</p>
+  </div>
+</body>
+</html>
